@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr 30px;
+    grid-template-areas: 
+     "user main"
+     "user footer";
+    height: 100vh;
+}
+
+.profile .user{
+    grid-area: user;
+    background: linear-gradient(168.12deg, #524266 -4.96%, #437ABC 96.41%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile .user .avatar{
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.profile .user .avatar p{
+    color: #ffff;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: justify;
+    text-align: center;
+}
+.profile .user .avatar img{
+    margin: 20px 0px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.profile .user .user-menu{
+    margin-top: 20px;
+    flex: 1;
+}
+
+.profile .user .user-menu ul{
+    list-style: none;
+}
+.profile .user .user-menu ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    display: block;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    /* border-top: 1px solid #fff; */
+}
+.profile .user .user-menu ul a:hover{
+    background: linear-gradient(90deg, #DAE3FF 0%, rgba(196, 196, 196, 0) 100%);
+}
+.profile main{
+    grid-area: main;
+    background: #F7F8FB;
+}
+
+.profile main h1{
+    margin: 30px;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.profile main header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile main header button{
+    margin: 3px 7px 3px 3px;
+    padding: 2px 3px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F7F8FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile main header button i{
+    font-size: 20px;
+    margin-left: 4px;
+    color: rgb(90, 90, 90);
+}
+
+.profile footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: footer;
+}
+
+.profile footer a{
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .profile .user{
+        display: none;
+    }
+
+    .profile {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: 1fr 30px;
+        grid-template-areas: 
+         "main main"
+         "footer footer";
+        height: 100vh; 
+    }
+
+}
