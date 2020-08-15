@@ -11,6 +11,7 @@ Durante este projeto, consolidei melhor os conceitos:
 
 - [x] Criação Schemas e manuseio de dados através MongoDb
 - [x] Criação e configuração do ambiente de desenvolvimento em TS
+- [x] Criptografia de senhas para salvar no BD.
 - [x] requisições HTTP através do Axios;
 - [x] Componentes do React;
 - [x] Melhores abordagens práticas para CSS Grid e Flexbox;
